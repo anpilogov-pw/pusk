@@ -24,19 +24,19 @@
           <ul class="space-y-2 text-gray-600">
             <li class="flex items-center">
               <span class="w-2 h-2 bg-blue-500 rounded-full mr-3" />
-              Vue 3 + TypeScript
+              <span>Vue 3 + TypeScript</span>
             </li>
             <li class="flex items-center">
               <span class="w-2 h-2 bg-blue-500 rounded-full mr-3" />
-              Tailwind CSS
+              <span>Tailwind CSS</span>
             </li>
             <li class="flex items-center">
               <span class="w-2 h-2 bg-blue-500 rounded-full mr-3" />
-              Vue Router + Vue I18n
+              <span>Vue Router + Vue I18n</span>
             </li>
             <li class="flex items-center">
               <span class="w-2 h-2 bg-blue-500 rounded-full mr-3" />
-              ESLint + Prettier
+              <span>ESLint + Prettier</span>
             </li>
           </ul>
         </div>
@@ -45,7 +45,7 @@
     
     <div class="text-center">
       <router-link 
-        to="/" 
+        :to="{ name: ROUTER_NAMES.HOME }" 
         class="inline-block px-8 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors duration-200 shadow-lg"
       >
         {{ $t('home') }}
@@ -53,3 +53,7 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { ROUTER_NAMES } from '../constants'
+</script>
