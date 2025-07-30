@@ -1,6 +1,6 @@
 export default {
   plugins: {
-    tailwindcss: {},
+    '@tailwindcss/postcss': {},
     autoprefixer: {
       overrideBrowserslist: ['> 1%', 'last 2 versions', 'not dead']
     },
